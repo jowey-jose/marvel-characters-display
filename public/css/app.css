@@ -479,6 +479,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
 }
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -494,6 +498,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .ml-24 {
   margin-left: 6rem;
@@ -521,9 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .-mt-px {
   margin-top: -1px;
-}
-.mt-1 {
-  margin-top: 0.25rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -567,6 +571,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-8 {
   width: 2rem;
 }
+.w-96 {
+  width: 24rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -575,9 +582,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-auto {
   width: auto;
-}
-.w-96 {
-  width: 24rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -859,6 +863,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 .hover\:opacity-75:hover {
   opacity: 0.75;

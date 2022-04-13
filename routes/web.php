@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CharactersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    // return view('welcome');
-    return view('index');
-});
+Route::get('/', [CharactersController::class, 'index'])-> name('index');
 
-Route::get('/show', function () {
-    // return view('welcome');
-    return view('show');
-});
+Route::get('/characters/{character}', [CharactersController::class, 'show']);
