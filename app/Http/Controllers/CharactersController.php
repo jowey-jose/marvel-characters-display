@@ -18,7 +18,7 @@ class CharactersController extends Controller
         $marvelCharacters = Http::get('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=e89db5b01968e5273f92acc7c79047e9&hash=756c034abbff259b7b8875154d9878d7')
         ->json()['data']['results'];
 
-//        dump($marvelCharacters);
+//
 
         return view('index',[
                 'marvelCharacters' => $marvelCharacters,
@@ -54,7 +54,15 @@ class CharactersController extends Controller
      */
     public function show($id)
     {
-        //
+        $character = Http::get('http://gateway.marvel.com/v1/public/characters/'.$id.'?ts=1&apikey=e89db5b01968e5273f92acc7c79047e9&hash=756c034abbff259b7b8875154d9878d7')
+            ->json()['data']['results'];
+
+        dump($character);
+
+        // Return the single character view.s
+        return view('show',[
+            'character' => $character,
+        ]);
     }
 
     /**

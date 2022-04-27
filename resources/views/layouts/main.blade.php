@@ -21,11 +21,11 @@
                 </li>
 
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Characters</a>
+                    <a href="{{route('index')}}" class="hover:text-gray-300">Characters</a>
                 </li>
-                <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Comics</a>
-                </li>
+{{--                <li class="md:ml-16 mt-3 md:mt-0">--}}
+{{--                    <a href="#" class="hover:text-gray-300">Comics</a>--}}
+{{--                </li>--}}
             </ul>
 
             <div class="flex flex-col md:flex-row items-center">
